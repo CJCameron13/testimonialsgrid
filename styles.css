@@ -1,0 +1,213 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 13px;
+}
+
+#boxes-container {
+    font-family: "Barlow Semi Condensed";
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 15vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 75vh;
+}
+
+.boxes {
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 5px #d4d3d2;
+    padding-top: 10px;
+}
+
+.profile-grid-thin {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.profile-grid-wide {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-left: 7%;
+}
+
+.profile-text {
+    line-height: 3px;
+}
+
+.profile-photo {
+    border-radius: 50px;
+    height: 7%;
+    width: 7%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: hsl(263, 86%, 72%);
+}
+
+.profile-photo-thin {
+    border-radius: 50px;
+    height: 15%;
+    width: 15%;
+}
+
+.name {
+    font-weight: 600;
+    opacity: 90%;
+}
+
+.verified {
+    font-weight: 300;
+}
+
+.quote-heading-thin {
+    font-weight: 600;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 1.3vw;
+}
+
+.quote-subtext-thin {
+    font-weight: 300;
+    font-size: 0.9vw;
+    opacity: 70%;
+    margin-right: 10%;
+    margin-left: 10%
+}
+
+.quote-heading-wide {
+    font-weight: 600;
+    margin-right: 7%;
+    margin-left: 7%;
+    font-size: 1.3vw;
+}
+
+.quote-subtext-wide {
+    font-weight: 300;
+    font-size: 0.9vw;
+    opacity: 70%;
+    margin-right: 7%;
+    margin-left: 7%;
+}
+
+#daniel-clifford-box {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position-x: 80%;
+    color: white;
+    grid-column: 1 / 3;
+    grid-row: 1 /2;
+    width: 38vw;
+    height: 35vh;
+}
+
+#jonathan-walters-box {
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    width: 18vw;
+    height: 35vh;
+}
+
+#jeanette-harmon-box {
+    background-color: white;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 18vw;
+    height: 35vh;
+}
+
+#patrick-abrams-box {
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    width: 38vw;
+    height: 35vh;
+}
+
+#kira-whittle-box {
+    background-color: white;
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    width: 18vw;
+    height: 73vh;
+}
+
+
+
+@media screen and (max-width: 375px) {
+    #boxes-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin-top: 10vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .boxes {
+        margin-bottom: 20px;
+    }
+
+    .quote-heading-thin {
+        font-size: 5vw;
+    }
+
+    .quote-subtext-thin {
+        font-size: 4vw;
+    }
+
+    .quote-heading-wide {
+        font-size: 5vw;
+    }
+
+    .quote-subtext-wide {
+        font-size: 4vw;
+    }
+
+    #daniel-clifford-box {
+        grid-row: 1 / 3;
+        grid-column: 1 / 2;
+        width: 90vw;
+        height: 320px;
+    }
+
+    #jonathan-walters-box {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+        width: 90vw;
+        height: 190px;
+    }
+
+    #jeanette-harmon-box {
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+        width: 90vw;
+        height: 190px;
+    }
+
+    #patrick-abrams-box {
+        grid-row: 5 / 7;
+        grid-column: 1 / 2;
+        width: 90vw;
+        height: 320px;
+    }
+
+    #kira-whittle-box {
+        grid-row: 7 / 9;
+        grid-column: 1 / 2;
+        width: 90vw;
+        height: 320px;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 10px;
+    }
+}
