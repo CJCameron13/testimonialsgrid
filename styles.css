@@ -66,12 +66,12 @@ body {
     font-weight: 600;
     margin-right: 10%;
     margin-left: 10%;
-    font-size: 1.3vw;
+    font-size: 0.8rem;
 }
 
 .quote-subtext-thin {
     font-weight: 300;
-    font-size: 0.9vw;
+    font-size: 0.7rem;
     opacity: 70%;
     margin-right: 10%;
     margin-left: 10%
@@ -81,12 +81,12 @@ body {
     font-weight: 600;
     margin-right: 7%;
     margin-left: 7%;
-    font-size: 1.3vw;
+    font-size: 0.8rem;
 }
 
 .quote-subtext-wide {
     font-weight: 300;
-    font-size: 0.9vw;
+    font-size: 0.7rem;
     opacity: 70%;
     margin-right: 7%;
     margin-left: 7%;
@@ -140,6 +140,43 @@ body {
 }
 
 
+@media screen and (min-width : 1600px) {
+    .quote-heading-thin {
+        font-size: 1.5rem;
+    }
+    
+    .quote-subtext-thin {
+        font-size: 1rem;
+    }
+    
+    .quote-heading-wide {
+        font-size: 1.5rem;
+    }
+    
+    .quote-subtext-wide {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width : 1100px) and (max-width : 1600px) {
+    .quote-heading-thin {
+        font-size: 1rem;
+    }
+    
+    .quote-subtext-thin {
+        font-size: 0.9rem;
+    }
+    
+    .quote-heading-wide {
+        font-size: 1rem;
+    }
+    
+    .quote-subtext-wide {
+        font-size: 0.9rem;
+    }
+}
+
+
 
 @media screen and (max-width: 375px) {
     #boxes-container {
@@ -153,6 +190,11 @@ body {
 
     .boxes {
         margin-bottom: 20px;
+    }
+
+    .profile-photo {
+        height: 15%;
+        width: 15%;
     }
 
     .quote-heading-thin {
@@ -203,11 +245,10 @@ body {
         grid-row: 7 / 9;
         grid-column: 1 / 2;
         width: 90vw;
-        height: 320px;
+        height: 350px;
     }
 
     .attribution {
-        position: absolute;
-        bottom: 10px;
+        opacity: 0%;
     }
 }
